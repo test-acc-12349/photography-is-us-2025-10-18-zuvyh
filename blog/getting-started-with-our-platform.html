@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master professional photography lighting techniques with our comprehensive guide to LED lighting systems, color temperature, and studio setup for stunning results.">
+    <meta name="keywords" content="photography lighting, LED lighting guide, professional lighting, studio setup, color temperature, photography tips">
+    <meta name="author" content="Photography Is Us">
+    <meta property="og:title" content="Complete Guide to Professional Photography Lighting | Photography Is Us">
+    <meta property="og:description" content="Learn everything about professional photography lighting, LED systems, and studio techniques to elevate your photography skills.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=1200&h=675&fit=crop&q=80">
+    <title>Complete Guide to Professional Photography Lighting | Photography Is Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'Sora', sans-serif;
+        }
+        
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 100%);
+        }
+        
+        .smooth-transition {
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+        }
+        
+        .faq-item.active .faq-content {
+            max-height: 500px;
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+        
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: white;
+            z-index: 40;
+            padding-top: 80px;
+        }
+        
+        .mobile-menu.active {
+            display: block;
+        }
+        
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(8px, 8px);
+        }
+        
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+        
+        .hamburger span {
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .testimonial-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 24px;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .testimonial-card:hover {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            transform: translateY(-4px);
+        }
+        
+        .star-rating {
+            color: #fbbf24;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.6s ease-in-out;
+        }
+
+        .blog-content h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .blog-content h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #374151;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .blog-content p {
+            font-size: 1.0625rem;
+            line-height: 1.8;
+            color: #4b5563;
+            margin-bottom: 1.25rem;
+        }
+
+        .blog-content ul, .blog-content ol {
+            margin-bottom: 1.5rem;
+            margin-left: 1.5rem;
+        }
+
+        .blog-content li {
+            font-size: 1.0625rem;
+            line-height: 1.8;
+            color: #4b5563;
+            margin-bottom: 0.75rem;
+        }
+
+        .blog-content strong {
+            font-weight: 600;
+            color: #1f2937;
+        }
+
+        .blog-highlight {
+            background-color: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0.5rem;
+        }
+
+        .blog-highlight p {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Announcement Bar -->
+    <div class="bg-gray-900 text-white py-3 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto flex items-center justify-center gap-2 text-center">
+            <i class="fas fa-truck text-yellow-400"></i>
+            <p class="text-sm font-medium">Free worldwide shipping on orders over $100 • Fast 5-day delivery</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-30 bg-white border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center justify-between h-16">
+                <div class="flex items-center justify-between w-full">
+                    <a href="https://test-acc-12349.github.io/photography-is-us-2025-10-18-zuvyh" class="flex-shrink-0 flex items-center gap-2">
+                        <i class="fas fa-camera text-gray-900 text-2xl"></i>
+                        <span class="text-xl font-bold text-gray-900">Photography Is Us</span>
+                    </a>
+                    <a href="https://test-acc-12349.github.io/photography-is-us-2025-10-18-zuvyh" class="text-gray-700 hover:text-gray-900 text-sm font-medium smooth-transition hidden md:inline-block">
+                        ← Back
+                    </a>
+                    <a href="https://test-acc-12349.github.io/photography-is-us-2025-10-18-zuvyh" class="text-gray-700 hover:text-gray-900 text-sm font-medium smooth-transition md:hidden">
+                        ← Back
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Blog Content Section -->
+    <article class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <!-- Blog Header -->
+            <div class="mb-12">
+                <div class="mb-6">
+                    <span class="inline-block bg-yellow-100 text-yellow-800 px-4 py-1 rounded-full text-sm font-semibold mb-4">Photography Guide</span>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+                        Complete Guide to Professional Photography Lighting
+                    </h1>
+                    <p class="text-xl text-gray-600 leading-relaxed">
+                        Master the art of professional photography lighting with our comprehensive guide covering LED systems, studio setup, color temperature, and advanced techniques used by industry professionals.
+                    </p>
+                </div>
+                <div class="flex items-center gap-4 text-sm text-gray-600 mb-8">
+                    <span><i class="fas fa-calendar mr-2"></i>Published December 18, 2024</span>
+                    <span><i class="fas fa-clock mr-2"></i>12 min read</span>
+                </div>
+            </div>
+
+            <!-- Featured Image -->
+            <img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=1200&h=675&fit=crop&q=80" alt="Professional photography lighting setup in a modern studio with LED panels and reflectors" class="w-full h-auto rounded-2xl shadow-lg mb-12 object-cover">
+
+            <!-- Blog Content -->
+            <div class="blog-content">
+                <h2>Understanding the Fundamentals of Photography Lighting</h2>
+                <p>
+                    Photography lighting is the cornerstone of professional image creation. Whether you're shooting portraits, product photography, or documentary-style content, understanding how light behaves and how to control it is essential to achieving stunning results. The difference between a mediocre photograph and a professional-quality image often comes down to one factor: lighting.
+                </p>
+                <p>
+                    Light defines shape, texture, mood, and emotion in photography. It reveals details, creates shadows that add depth, and establishes the overall atmosphere of your images. Professional photographers spend years mastering lighting techniques because they understand that no amount of post-processing can completely compensate for poor lighting during the shoot.
+                </p>
+
+                <h2>The Evolution of Photography Lighting: From Traditional to LED</h2>
+                <p>
+                    For decades, photographers relied on traditional tungsten and fluorescent lighting systems. These older technologies, while effective, came with significant limitations. Tungsten lights generated excessive heat, consumed enormous amounts of electricity, and required constant cooling systems. Fluorescent lights provided cooler operation but often produced inconsistent color temperature and flickering that could ruin footage.
+                </p>
+                <p>
+                    The introduction of LED (Light Emitting Diode) technology revolutionized professional photography lighting. LED systems offer unprecedented control, efficiency, and reliability. They generate minimal heat, consume a fraction of the power of traditional systems, and provide consistent, flicker-free illumination that professionals demand. Today's LED lighting systems are the industry standard for professional photographers, videographers, and content creators worldwide.
+                </p>
+
+                <h2>Key Advantages of LED Lighting Systems</h2>
+                <p>
+                    LED lighting technology offers numerous advantages that make it the preferred choice for modern photographers:
+                </p>
+                <ul>
+                    <li><strong>Energy Efficiency:</strong> LED lights consume up to 80% less energy than traditional tungsten lights, dramatically reducing your operational costs and environmental impact.</li>
+                    <li><strong>Heat Reduction:</strong> Unlike traditional lights that generate excessive heat, LED systems remain cool to the touch, creating a comfortable working environment for you and your subjects.</li>
+                    <li><strong>Adjustable Color Temperature:</strong> Professional LED panels allow you to adjust color temperature from warm (2700K) to daylight (5600K) or even cool (6500K+), providing flexibility for any lighting scenario.</li>
+                    <li><strong>Dimming Capabilities:</strong> Smooth dimming from 0-100% allows precise control over light intensity without color shift, giving you exact control over exposure and mood.</li>
+                    <li><strong>Flicker-Free Operation:</strong> Modern LED lights operate at frequencies that eliminate flicker, essential for both still photography and video production.</li>
+                    <li><strong>Compact and Portable:</strong> LED panels are significantly lighter and more compact than traditional lighting rigs, making them ideal for location shoots and travel.</li>
+                    <li><strong>Longevity:</strong> LED lights last tens of thousands of hours, reducing replacement costs and equipment downtime.</li>
+                    <li><strong>Instant On/Off:</strong> Unlike traditional lights that require warm-up time, LEDs reach full brightness instantly.</li>
+                </ul>
+
+                <div class="blog-highlight">
+                    <p><strong>Pro Tip:</strong> When investing in LED lighting systems, look for panels that offer both RGB color control and adjustable color temperature. This dual functionality gives you maximum creative control and ensures compatibility with various lighting scenarios and creative visions.</p>
+                </div>
+
+                <h2>Understanding Color Temperature and White Balance</h2>
+                <p>
+                    Color temperature is measured in Kelvin (K) and represents the warmth or coolness of light. Understanding color temperature is crucial for achieving accurate, professional-looking photographs. Different light sources have different color temperatures:
+                </p>
+                <ul>
+                    <li><strong>Candlelight:</strong> 1800K - Very warm, orange-tinted light</li>
+                    <li><strong>Tungsten Bulbs:</strong> 2700K - Warm, yellowish light</li>
+                    <li><strong>Warm White LED:</strong> 3000-3500K - Comfortable indoor lighting</li>
+                    <li><strong>Daylight LED:</strong> 5000-5600K - Neutral, balanced daylight</li>
+                    <li><strong>Cool White/Daylight:</strong> 6500K+ - Cool, bluish daylight</li>
+                </ul>
+                <p>
+                    Your camera's white balance setting must match the color temperature of your lighting to achieve accurate colors. Modern cameras offer automatic white balance, but for professional results, manual white balance adjustment or using white balance cards during shoots ensures color accuracy across all your images.
+                </p>
+
+                <h2>Essential Lighting Setups for Professional Photography</h2>
+                
+                <h3>Three-Point Lighting Setup</h3>
+                <p>
+                    The three-point lighting setup is the foundation of professional portrait and product photography. This classic technique uses three lights positioned strategically to create dimension, depth, and visual interest:
+                </p>
+                <ul>
+                    <li><strong>Key Light:</strong> The primary light source positioned at a 45-degree angle to the subject. This light defines the main features and creates the primary shadows.</li>
+                    <li><strong>Fill Light:</strong> Positioned opposite the key light, the fill light softens harsh shadows created by the key light, providing detail in shadow areas without eliminating them completely.</li>
+                    <li><strong>Back Light (Rim Light):</strong> Positioned behind the subject, the back light separates the subject from the background, adding depth and creating a professional, polished appearance.</li>
+                </ul>
+
+                <h3>Butterfly Lighting</h3>
+                <p>
+                    Butterfly lighting, also called paramount lighting, is ideal for portrait photography. The key light is positioned directly in front of the subject, slightly above eye level, creating a butterfly-shaped shadow under the nose. This setup is flattering, especially for headshots and beauty photography.
+                </p>
+
+                <h3>Rembrandt Lighting</h3>
+                <p>
+                    Named after the Dutch master painter, Rembrandt lighting creates a distinctive triangular highlight on the shadowed side of the subject's face. This dramatic lighting setup is achieved by positioning the key light at a steep angle, creating strong shadows that add character and dimension to portraits.
+                </p>
+
+                <h2>Mastering Soft vs. Hard Light</h2>
+                <p>
+                    Understanding the difference between soft and hard light is fundamental to controlling your photographic images. The size of your light source relative to the subject determines whether light is soft or hard:
+                </p>
+                <p>
+                    <strong>Soft Light</strong> is created by large light sources relative to the subject. It produces gradual shadow transitions, flattering skin tones, and minimal harsh shadows. Soft light is ideal for portrait photography, beauty shots, and creating a gentle, flattering aesthetic. Professional photographers achieve soft light using light diffusers, softboxes, or umbrellas that spread light across a larger area.
+                </p>
+                <p>
+                    <strong>Hard Light</strong> is created by small light sources relative to the subject. It produces sharp shadow transitions, high contrast, and dramatic effects. Hard light is excellent for creating mood, emphasizing texture, and producing striking, dramatic images. Direct, unmodified LED panels create hard light perfect for architectural photography, product photography with dramatic shadows, and creative portrait work.
+                </p>
+
+                <div class="blog-highlight">
+                    <p><strong>Lighting Modifier Essentials:</strong> Invest in quality diffusers, softboxes, umbrellas, and reflectors. These affordable accessories dramatically expand your creative possibilities and allow you to manipulate light exactly as you envision. A simple white reflector can fill shadows and improve image quality without additional light sources.</p>
+                </div>
+
+                <h2>Advanced Lighting Techniques for Professional Results</h2>
+                
+                <h3>Backlighting and Rim Lighting</h3>
+                <p>
+                    Backlighting creates separation between your subject and background, adding dimension and visual interest. When light comes from behind the subject, it creates a glowing outline (rim light) that makes subjects pop from the background. This technique is particularly effective for hair, translucent objects, and creating silhouettes.
+                </p>
+
+                <h3>Practical Lights and Ambient Light Integration</h3>
+                <p>
+                    Professional photographers often incorporate practical lights (lights visible in the scene) and ambient light into their compositions. This technique creates more natural, authentic-looking images. LED panels are perfect for supplementing ambient light or creating practical light effects without the heat and power consumption of traditional systems.
+                </p>
+
+                <h3>Color Gels and Creative Lighting</h3>
+                <p>
+                    Using colored gels on your LED lights opens creative possibilities. Color gels allow you to create mood, match existing light sources, or produce artistic effects. Professional photographers often use warm gels for tungsten-balanced scenes or cool gels for creative, contemporary looks.
+                </p>
+
+                <h2>Setting Up Your Professional Photography Studio</h2>
+                <p>
+                    Creating an effective photography studio requires thoughtful planning and quality equipment. Here are essential considerations:
+                </p>
+                <p>
+                    <strong>Space and Layout:</strong> Dedicate adequate space for your lighting setup, subject positioning, and camera placement. A minimum of 100 square feet allows flexibility in positioning lights and achieving various compositions. Ensure your studio has adequate electrical outlets positioned strategically around the space.
+                </p>
+                <p>
+                    <strong>Lighting Equipment:</strong> Invest in professional LED panels with adjustable color temperature and dimming capabilities. A basic setup includes two to four quality LED panels, light stands, softboxes or diffusers, reflectors, and light meters. Quality equipment ensures consistent, reliable results.
+                </p>
+                <p>
+                    <strong>Backgrounds and Surfaces:</strong> Professional backgrounds, seamless paper, or fabric backdrops provide clean, distraction-free backgrounds. Reflective surfaces, white walls, and textured backgrounds offer variety. Ensure your background system allows quick changes between shoots.
+                </p>
+                <p>
+                    <strong>Support Equipment:</strong> Sturdy light stands, tripods, and mounting hardware ensure stability and safety. Quality stands support heavy equipment reliably and adjust smoothly. Never compromise on support equipment—falling lights create safety hazards and equipment damage.
+                </p>
+
+                <h2>Common Lighting Mistakes to Avoid</h2>
+                <ul>
+                    <li><strong>Overexposure from Excessive Key Light:</strong> Balance your key light intensity with fill light to avoid blown-out highlights and loss of detail.</li>
+                    <li><strong>Neglecting Fill Light:</strong> Fill light is not optional—it controls shadow depth and ensures detail visibility in shadow areas.</li>
+                    <li><strong>Inconsistent Color Temperature:</strong> Mixing different color temperatures creates color casts. Ensure all lights match in color temperature or adjust white balance accordingly.</li>
+                    <li><strong>Poor Light Positioning:</strong> Experiment with light angles. Small position adjustments dramatically affect the final image. Take test shots and adjust accordingly.</li>
+                    <li><strong>Ignoring Reflectors:</strong> Reflectors are free, portable fill light. Always have reflectors available to bounce light into shadow areas.</li>
+                    <li><strong>Inadequate Light Modifiers:</strong> Diffusers and softboxes are essential. Direct, unmodified light creates harsh, unflattering shadows in most scenarios.</li>
+                </ul>
+
+                <h2>Professional Lighting for Different Photography Genres</h2>
+                
+                <h3>Portrait Photography</h3>
+                <p>
+                    Portrait lighting prioritizes flattering the subject while creating dimension. Soft, diffused key light positioned at 45 degrees creates natural-looking shadows. Fill light from the front softens shadows while maintaining definition. Back light separates the subject from the background. Professional portrait photographers often use large softboxes to create flattering, even skin tones.
+                </p>
+
+                <h3>Product Photography</h3>
+                <p>
+                    Product lighting emphasizes texture, detail, and form. Hard light often reveals product details effectively. Multiple lights at different angles highlight various product features. Reflectors and bounce boards control shadows and ensure even illumination. LED panels' adjustable intensity allows precise exposure control for product photography.
+                </p>
+
+                <h3>Food Photography</h3>
+                <p>
+                    Food photography requires warm, appetizing light. Soft, directional lighting at 45-degree angles creates appealing shadows and highlights food texture. Warm color temperature (3000-3500K) makes food appear warmer and more inviting. Reflectors fill shadows while maintaining the natural appearance essential to food photography.
+                </p>
+
+                <h2>Investing in Quality Lighting Equipment</h2>
+                <p>
+                    Professional photography lighting is an investment in your photography business or serious hobby. Quality LED panels cost more initially but deliver superior results, durability, and reliability. Consider these factors when purchasing lighting equipment:
+                </p>
+                <ul>
+                    <li><strong>Color Accuracy:</strong> Ensure lights maintain consistent color temperature across the dimming range.</li>
+                    <li><strong>CRI (Color Rendering Index):</strong> Higher CRI (95+) ensures accurate color reproduction, essential for professional work.</li>
+                    <li><strong>Build Quality:</strong> Durable construction ensures equipment longevity and reliable operation.</li>
+                    <li><strong>Warranty and Support:</strong> Reputable manufacturers offer comprehensive warranties and technical support.</li>
+                    <li><strong>Accessories and Compatibility:</strong> Ensure the system accepts standard light modifiers and accessories.</li>
+                </ul>
+
+                <div class="blog-highlight">
+                    <p><strong>Budget-Friendly Tip:</strong> You don't need expensive equipment to achieve professional results. Start with two quality LED panels, basic stands, affordable diffusers, and white reflectors. Master fundamental lighting techniques with this basic setup before expanding your equipment collection.</p>
+                </div>
+
+                <h2>Conclusion: Elevate Your Photography with Professional Lighting</h2>
+                <p>
+                    Professional photography lighting transforms ordinary images into extraordinary ones. Understanding light behavior, mastering fundamental lighting setups, and investing in quality LED equipment positions you for success in photography. Whether you're shooting portraits, products, or any other genre, the principles outlined in this guide apply universally.
+                </p>
+                <p>
+                    Start by mastering three-point lighting and understanding color temperature. Practice positioning lights at various angles and observe how small adjustments affect your images. Experiment with soft and hard light. Build your lighting toolkit gradually, investing in quality equipment that delivers consistent results.
+                </p>
+                <p>
+                    Remember that professional photographers continue learning throughout their careers. Lighting techniques evolve, new equipment emerges, and creative possibilities expand constantly. Stay curious, experiment fearlessly, and let your creative vision guide your lighting decisions. With dedication and practice, you'll master professional photography lighting and create images that captivate and inspire.
+                </p>
+            </div>
+
+            <!-- Author Bio -->
+            <div class="bg-gray-50 rounded-xl p-8 mt-16 border border-gray-200">
+                <div class="flex items-start gap-6">
+                    <div class="w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold flex-shrink-0">
+                        PI
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Photography Is Us</h3>
+                        <p class="text-gray-600 mb-4">
+                            Photography Is Us is a leading provider of professional photography equipment and expertise. Our team of experienced photographers and equipment specialists is dedicated to helping photographers at all levels achieve their creative vision with premium lighting systems, tripods, and pro equipment.
+                        </p>
+                        <a href="https://test-acc-12349.github.io/photography-is-us-2025-10-18-zuvyh" class="text-gray-900 font-semibold hover:text-yellow-600 smooth-transition">
+                            Visit Our Store →
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Articles -->
+            <div class="mt-16 pt-16 border-t border-gray-200">
+                <h3 class="text-2xl font-bold text-gray-900 mb-8">Related Articles</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg smooth-transition">
+                        <div class="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                            <i class="fas fa-camera text-white text-4xl"></i>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="text-lg font-bold text-gray-900 mb-2">Essential Photography Tripods for Every Photographer</h4>
+                            <p class="text-gray-600 text-sm mb-4">Learn how to choose the right tripod for your photography style and master stability techniques for sharp, professional images.</p>
+                            <a href="#" class="text-gray-900 font-semibold hover:text-yellow-600 smooth-transition text-sm">Read More →</a>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg smooth-transition">
+                        <div class="h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+                            <i class="fas fa-sliders-h text-white text-4xl"></i>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="text-lg font-bold text-gray-900 mb-2">Professional Studio Setup: Complete Equipment Guide</h4>
+                            <p class="text-gray-600 text-sm mb-4">Discover everything you need to create a professional photography studio from scratch with our comprehensive equipment guide.</p>
+                            <a href="#" class="text-gray-900 font-semibold hover:text-yellow-600 smooth-transition text-sm">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="bg-gradient-to-r from-gray-900 to-gray-800 rounded-xl p-12 mt-16 text-center">
+                <h3 class="text-3xl font-bold text-white mb-4">Ready to Upgrade Your Lighting Setup?</h3>
+                <p class="text-gray-300 mb-8 text-lg">
+                    Explore our professional LED lighting systems and photography equipment designed for photographers who demand excellence.
+                </p>
+                <a href="https://led.com" class="btn-primary text-white px-8 py-4 rounded-lg font-semibold inline-flex items-center gap-2 hover:shadow-2xl">
+                    <span>Shop Professional Lighting</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <i class="fas fa-camera text-yellow-400 text-2xl"></i>
+                        <span class="text-xl font-bold text-white">Photography Is Us</span>
+                    </div>
+                    <p class="text-sm text-gray-400 mb-6">
+                        Premium photography equipment for professionals and enthusiasts worldwide.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 smooth-transition">
+                            <i class="fab fa-facebook-f text-gray-300"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 smooth-transition">
+                            <i class="fab fa-twitter text-gray-300"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 smooth-transition">
+                            <i class="fab fa-instagram text-gray-300"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 smooth-transition">
+                            <i class="fab fa-youtube text-gray-300"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="https://test-acc-12349.github.io/photography-is-us-2025-10-18-zuvyh" class="text-gray-400 hover:text-white smooth-transition text-sm">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://test-acc-12349.github.io/photography-is-us-2025-10-18-zuvyh#features" class="text-gray-400 hover:text-white smooth-transition text-sm">
+                                Features
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://test-acc-12349.github.io/photography-is-us-2025-10-18-zuvyh#benefits" class="text-gray-400 hover:text-white smooth-transition text-sm">
+                                Benefits
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://test-acc-12349.github.io/photography-is-us-2025-10-18-zuvyh#testimonials" class="text-gray-400 hover:text-white smooth-transition text-sm">
+                                Testimonials
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://led.com" class="text-gray-400 hover:text-white smooth-transition text-sm">
+                                Shop
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h4 class="text-white font-semibold mb-6">Support</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white smooth-transition text-sm">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white smooth-transition text-sm">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white smooth-transition text-sm">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white smooth-transition text-sm">
+                                Terms & Conditions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white smooth-transition text-sm">
+                                Shipping Info
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-white font-semibold mb-6">Get in Touch</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-envelope text-yellow-400 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <p class="text-sm text-gray-400">Email</p>
+                                <a href="mailto:admin@led.com" class="text-white hover:text-yellow-400 smooth-transition font-medium">
+                                    admin@led.com
+                                </a>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-phone text-yellow-400 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <p class="text-sm text-gray-400">Phone</p>
+                                <a href="tel:+1234567890" class="text-white hover:text-yellow-400 smooth-transition font-medium">
+                                    +1 (234) 567-890
+                                </a>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt text-yellow-400 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <p class="text-sm text-gray-400">Address</p>
+                                <p class="text-white font-medium">123 Photography Lane, Creative City, CC 12345</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-800 pt-8 mt-8">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                    <p class="text-sm text-gray-400">
+                        &copy; 2024 Photography Is Us. All rights reserved.
+                    </p>
+                    <div class="flex items-center gap-6">
+                        <a href="#" class="text-sm text-gray-400 hover:text-white smooth-transition">
+                            Privacy Policy
+                        </a>
+                        <a href="#" class="text-sm text-gray-400 hover:text-white smooth-transition">
+                            Terms of Service
+                        </a>
+                        <a href="#" class="text-sm text-gray-400 hover:text-white smooth-transition">
+                            Cookie Settings
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const hamburger = document.querySelector('.hamburger');
+            mobileMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const hamburger = document.querySelector('.hamburger');
+            const header = document.querySelector('header');
+            
+            if (!header.contains(event.target) && mobileMenu && mobileMenu.classList.contains('active')) {
+                mobileMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        });
+
+        // FAQ Toggle
+        function toggleFAQ(button) {
+            const faqItem = button.closest('.faq-item');
+            const allFaqItems = document.querySelectorAll('.faq-item');
+            
+            allFaqItems.forEach(item => {
+                if (item !== faqItem) {
+                    item.classList.remove('active');
+                }
+            });
+            
+            faqItem.classList.toggle('active');
+        }
+
+        // Newsletter Form Handler
+        function handleNewsletterSubmit(event) {
+            event.preventDefault();
+            const email = event.target.querySelector('input[type="email"]').value;
+            
+            const button = event.target.querySelector('button');
+            const originalText = button.textContent;
+            button.textContent = 'Subscribed!';
+            button.disabled = true;
+            
+            setTimeout(() => {
+                button.textContent = originalText;
+                button.disabled = false;
+                event.target.reset();
+            }, 3000);
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Lazy load images
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.classList.add('fade-in');
+                        observer.unobserve(img);
+                    }
+                });
+            });
+
+            document.querySelectorAll('img[data-src]').forEach(img => imageObserver.observe(img));
+        }
+
+        // Add scroll animation to elements
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.feature-card, .testimonial-card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
